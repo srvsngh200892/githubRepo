@@ -1,0 +1,8 @@
+<h3>Search Results - Public Repositories </h3>
+<%= paginate @results %>
+<% @results.each do |result| %>
+    <div class="list-group">
+      <a href="<%= result['html_url'] %>" target="_blank" class="list-group-item list-group-item-action"><%= result['name'] %></a>
+    </div>
+<% end %>
+<%= paginate @results %>

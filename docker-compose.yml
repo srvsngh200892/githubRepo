@@ -1,0 +1,12 @@
+version: "3"
+services:
+  website:
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      RAILS_ENV: production
+      RAILS_SERVE_STATIC_FILES: "true"
+      RAILS_MASTER_KEY: 84eeb67f81fc1720df4d6d7a1e14b27c
